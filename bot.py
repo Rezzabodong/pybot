@@ -16,7 +16,7 @@ def action(msg):
         telegram_bot.sendDocument(chat_id, document=open('/home/sasmitoh/Downloads/bot.py'))
     elif command == '/audio':
         telegram_bot.sendAudio(chat_id, audio=open('/home/sasmitoh/Downloads/sas.mp3'))
-telegram_bot = telepot.Bot('masukan token bot anda')
+telegram_bot = telepot.Bot(api)
 print (telegram_bot.getMe())
 MessageLoop(telegram_bot, action).run_as_thread()
 print 'Up and Running....'
