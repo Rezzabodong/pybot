@@ -1,5 +1,6 @@
 import time, datetime
 import telepot
+from config import api
 from telepot.loop import MessageLoop
 now = datetime.datetime.now()
 def action(msg):
